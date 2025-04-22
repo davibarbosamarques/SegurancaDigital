@@ -1,0 +1,42 @@
+/* Reset CSS */
+
+/* Remove margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Define uma altura mínima para body e html */
+  html, body {
+    height: 100%;
+    font-family: 'Poppins', 'sans-serif';
+    background-color: #F5F7FA;
+    /* color: #374151; */
+  }
+  
+  /* Remove decoração de links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Remove estilos de lista */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Botões e inputs sem estilos padrão */
+  button, input, textarea, select {
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  /* Define imagens responsivas */
+  img, picture {
+    max-width: 100%;
+    display: block;
+  }

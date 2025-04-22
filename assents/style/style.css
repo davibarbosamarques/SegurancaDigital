@@ -1,0 +1,56 @@
+:root{
+    --CinzaClaro: #F5F7FA;
+    --CinzaMedio: #D1D5DB;
+    --CinzaEscuro: #374151;
+    --Azul: #1E40AF;
+    --AzulEscuro: #3B82F6;
+
+}
+/* ESTILO HEADER */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    background-color: var(--CinzaMedio);
+}
+h1{
+    font-size: 28px;
+    font-weight: 600;
+}
+ul{
+    display: flex;
+    gap: 3rem;
+}
+.icon{
+    display: none;
+    font-size: 2rem;
+}
+/* ESTILOS HOME */
+
+section#home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem 0 4rem;
+}
+section#home div.txt{
+    width: 35rem;
+}
+section#home h2{
+    font-size: 3.7rem;
+    font-weight: 500;
+}
+section#home p{
+    font-size: 1.2rem;
+}
+div.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+img{
+    /* max-width: 35rem; */
+    min-width: 30rem;
+}
