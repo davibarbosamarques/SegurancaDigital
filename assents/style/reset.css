@@ -11,9 +11,12 @@
   html, body {
     height: 100%;
     font-family: 'Poppins', 'sans-serif';
-    background-color: #F5F7FA;
     /* color: #374151; */
   }
+
+#navigation-header, #home {
+  background-color: #F5F4F5;
+}
   
   /* Remove decoração de links */
   a {
