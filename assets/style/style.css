@@ -1,5 +1,6 @@
 :root{
-    --CinzaClaro: #F5F7FA;
+    --CinzaClaro: #F4F4F5;
+    --CinzaBtn: #E4E4E2;
     --CinzaMedio: #D1D5DB;
     --CinzaEscuro: #374151;
     --Azul: #1E40AF;
@@ -26,11 +27,18 @@
         height: 5vh;
         width: 600px;
         font-size: 1.1rem;
+        transition: 0.3s;
 
         & #contact-us-btn {
             padding: 0.7rem;
             border-radius: 0.5rem;
-            background-color: #E4E4E2;
+            background-color: var(--CinzaBtn);
+        }
+
+        & a {
+            transition: 0.3s ease-in-out;
+        }:hover {
+            box-shadow: 0px 2px 0px var(--CinzaEscuro);
         }
 
     }
@@ -85,7 +93,7 @@
 
 /*Dicas de Segurança*/
 
-#section-tips {
+#section-infos, #news-container {
     height: 60vh;
     width: auto;
     display: flex;
@@ -94,24 +102,24 @@
     justify-content: center;
     gap: 1rem;
 
-    & #tips-title {
+    & .infos-title {
         display: flex;
         align-items: end;
         height: 10vh;
         width: 90%;
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 600;
     }
 
-    & #tips-cards-container {
+    & .infos-cards-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 90%;
 
         
-    & .tips-card {
-        background-color: #F4F4F5;
+    & .infos-card {
+        background-color: var(--CinzaClaro);
         border-radius: 1.2rem;
         height: 20rem;
         width: 20rem;
@@ -133,4 +141,40 @@
     }
 
     }
+}
+
+/* Estilização do Footer */
+
+#footer-container {
+    background-color: var(--CinzaClaro);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & #newscard-container {
+        width: 90%;
+        height: 32vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .footer-card-news {
+            width: 18vw;
+            height: 30vh;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+
+            & .footer-title {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+        }
+
+    }
+
 }
